@@ -1,4 +1,4 @@
-/*this program prints out hello world to the terminal */
+/*this program prints out hello world to the terminal ykwim */
 
 #include <iostream>
 #include <cstdlib>
