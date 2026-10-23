@@ -17,6 +17,10 @@ public:
 
     bool isAlive() const;
     void setHitsTaken(int new_hits);
+    void setName(string name);
+    void updateExpLevel();
+    void attack(RPG* opponent);
+    void printStats();
 
     string getName() const;
     int getHitsTaken() const;

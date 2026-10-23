@@ -1,23 +1,20 @@
 #include <iostream>
 #include "RPG.h"
+#include "Game.h"
 
 using namespace std;
 
 int main()
 {
-    RPG p1("Wiz", 0, 0.2, 60.0, 1);
-    RPG p2;
+    Game game;
 
-    cout << p1.getName() << endl;
-    cout << p2.getName() << endl;
-    cout << p1.getHitsTaken() << endl;
-    cout << p1.getLuck() << endl;
-    cout << p1.getExp() << endl;
-    cout << p1.getLevel() << endl;
+    int num_players = 10;
 
-    p1.setHitsTaken(3);
-    cout << p1.getHitsTaken() << endl;
-    cout << p1.isAlive() << endl;
-    cout << p2.isAlive() << endl;
+    game.generatePlayers(num_players);
+
+    game.gameLoop();
+
+    game.printFinalResults();
+
     return 0;
 }
